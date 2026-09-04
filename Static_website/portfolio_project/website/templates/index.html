@@ -1,0 +1,165 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Arun R - Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    
+    <!-- Navigation -->
+    <header>
+
+        <nav>
+
+            <h2>ARUN R</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <img src="{% static '/images/profile.jpeg' %}"
+     alt="Profile Image"
+     class="brand logo">
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <h1>Hello, I'm Arun</h1>
+
+        <h2>Linux System Administrator</h2>
+
+        <p>
+            I am learning Python Full Stack Development.
+        </p>
+
+        <button id="skillsButton">
+            View My Skills
+        </button>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am interested in Linux, Python, DevOps,
+            Web Development and Cloud technologies.
+        </p>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Linux</div>
+
+            <div class="skill">Python</div>
+
+            <div class="skill">HTML</div>
+
+            <div class="skill">CSS</div>
+
+            <div class="skill">JavaScript</div>
+
+        </div>
+
+        <button id="showSkills">
+            Show Skills
+        </button>
+
+        <p id="skillMessage"></p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+
+            <label for="name">
+                Enter your Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+
+            <label for="email">
+                Enter your Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="xxxxxxxxxx@gmail.com"
+            >
+            
+            <label for="Mobile Number">
+                Enter your Number
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="9876543211"
+            >
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Arun R
+        </p>
+
+    </footer>
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
